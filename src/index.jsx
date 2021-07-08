@@ -18,10 +18,10 @@ const App = () => {
   const [deck, setDeck] = useState([ ]);
 
   const addCardToDeck = ({ id, name }) => {
-const nextDeck = [...deck]; // make a duplicate first
+const nextDeck = [...deck]; 
 const index = nextDeck.findIndex(card => card.id === id);
 
-//index will be -1 if it is not found
+
 if (index > -1) {
   nextDeck[index].count += 1;
 } else {
