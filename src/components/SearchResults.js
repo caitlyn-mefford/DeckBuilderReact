@@ -7,7 +7,7 @@ import Card from "./Card";
 const SearchResults = ({ results, addCardToDeck, removeCardFromDeck }) => {
   return (
     <div id="results">
-      <h3>Here's what we found: ({results.length} results):</h3>
+      <h3>Search Results ({results.length}):</h3>
       <div className="CardList">
         {results.map((result) => (
           <Card
